@@ -14,17 +14,17 @@ public class CYK_Run {
     private static Leitura_CYK ler;
 
     public static void main(String[] args) throws FileNotFoundException {
-//        File glc = new File("C:\\Users\\kaiob\\Documents\\NetBeansProjects\\CYK_LFA\\src\\glc.txt");
-//        File cadeias = new File("C:\\Users\\kaiob\\Documents\\NetBeansProjects\\CYK_LFA\\src\\cadeia.txt");
-//        ler = new Leitura_CYK(glc, cadeias);
-//        tabelas = new Tabela_CYK[ler.getCadeias().length];
-//        criarTabelas();
-//        regras = ler.getRegras();
-//        for (int i = 0; i < tabelas.length; i++) {
-//            cyk(tabelas[i]);
-//        }
-//        getStatus();
-//        Tabela();
+        File glc = new File("C:\\Users\\kaiob\\Documents\\NetBeansProjects\\CYK_LFA\\src\\glc.txt");
+        File cadeias = new File("C:\\Users\\kaiob\\Documents\\NetBeansProjects\\CYK_LFA\\src\\cadeia.txt");
+        ler = new Leitura_CYK(glc, cadeias);
+        tabelas = new Tabela_CYK[ler.getCadeias().length];
+        criarTabelas();
+        regras = ler.getRegras();
+        for (int i = 0; i < tabelas.length; i++) {
+            cyk(tabelas[i]);
+        }
+        getStatus();
+        Tabela();
     }
 
     private static void getStatus() throws FileNotFoundException {
